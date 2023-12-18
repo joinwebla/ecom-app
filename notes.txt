@@ -1,0 +1,229 @@
+
+1. API calling - Axios
+2. Bootstrap
+=========================
+
+
+100vw --> view port width
+vh --> view port height
+
+
+
+Task1
+======
+1. Signup Form --> SignUp API
+	Fullname
+	Email
+	Phone
+	Password
+	Confirm Password
+
+2. Login Form --> Login API
+	Email
+	Password
+
+Task2
+======
+3. Show Products to the customers with filters
+4. Logout
+
+Task3
+======
+5. Move products to Cart
+6. Remove products from cart
+7. Checkout to payment
+
+
+
+200					FE  ---> BE ---> Processed - Success
+	200
+	201
+	202
+300					FE ---> BE ---> Redirect -- half-success
+	301
+	303
+400					FE ---> BE
+	401-unauthorised
+	404-pagenotfound
+500													FE ---> BE (bug in BE)
+	501 - internal server
+
+
+
+
+	step1
+	=====
+	FE sends username+password to the BE & BE returned with toke
+
+	step2
+	======
+	FE stored the token and redirect to the next
+
+
+
+1. Forms & validations
+2. Yup
+3. Form error handling
+4. Session & Authentication
+5. Types of Authentication
+6. Cookie vs token
+7. localstorage vs sessionstorage
+8. API error handlings
+
+
+. useState
+. useEffect
+. useContext
+• useRef hook
+• useMemo hook
+• useCallback hook
+Typechecking with PropTypes
+
+
+
+
+
+
+Context
+==========
+
+
+
+
+Lifitng State Up
+
+1. I would like to use state variable in one class in another ---- Context
+1. I would like to change state variable in one class in another --- State Manager Tools
+
+
+context - [number]
+
+<ComponentA />
+	const [number, setNumber] = useState(0) //3
+	<ComponentB />
+		<ComponentC />
+			<ComponentD />
+				context
+
+
+1. Create a context
+2. Render context and pass a value
+3. useContext and read value
+
+
+
+outside ---> default value
+Context.Provider
+	childrens
+
+
+
+
+Use Ref
+=========
+
+1. To select and perform some action on HTML elements
+2. This is an alternative for state variable
+
+
+
+Use Memo & Use Callback
+=========================
+To Improvise the performance
+
+
+
+useMemo
+=========
+1. it calculates only when dependecies changed
+2. it will return memoized value
+
+
+useCallback
+==============
+Whenevr you are passing a function to the child,then use useCallback
+it will return memoized callback function
+
+
+//friday
+1. Error Boundaries
+2. Typechecking with PropTypes
+		1. for better readability, what are all the props that a component recieving
+		2. it gives a warning when we send wrong value in props
+
+
+//monday
+Deployment
+
+
+//tuesday
+State Management tool
+
+
+
+<A />
+<B />
+<C />
+<D />
+<E />
+<F />
+
+
+
+
+index.js
+=========
+<ErrorBoundary>
+	<Childrens />
+	<Childrens />
+	<Childrens />
+	<Childrens />
+	<Childrens />
+	<Childrens />
+	<Childrens />
+</ErrorBoundary>
+
+
+create-react-app - npm run build
+10MB ---> 4KB
+
+Deployment
+==========
+1. Server ---> someone else computer which is connected to the internet 24/7
+2. Build  ---> final version of the project
+
+	Transforming + Minifying + Compressing
+	Transforming ---> Code Transformation ---> Converting your code to support all browsers
+	Minifying    ---> renaming variables into short names
+	Compressing  ---> removing whitespaces, etc additional codes
+
+	Transforming - Babel
+	Minifying + Compressing - Webpack
+
+
+
+Server login ---> Connect the code (Github) + Build + Deploy
+
+
+deployments steps
+===================
+1. Signup and login into github accout
+2. Create a repository
+3. Push your code into github
+
+		1. Once in a computer
+				1. Download git
+				2. Verify -  git --version
+				3. Connect your git to gihub
+					git config --global user.name "Your Name"
+					git config --global user.email "youremail@gmail.com"
+
+		2. Once Project
+		3. Day to Day
+
+
+
+
+
+4. Create Netligfy(server) account
+5. Connect your project to server
